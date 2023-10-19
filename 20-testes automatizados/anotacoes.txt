@@ -1,0 +1,11 @@
+go test --cover
+>>>> teste de cobertura
+
+go test --coverprofile cobertura.txt
+>>>> Gera arquivo externo com a cobertura
+
+go tool cover --func=cobertura.txt
+>>>> Lê o arquivo externo e exibe as funções de testes e suas coberturas
+
+go tool cover --html=cobertura.txt
+>>>> Exibe uma página com o código coberto e o não coberto
